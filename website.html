@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-----homepage----->
+    <section class="header">
+        <nav>
+            <img src="1.png">
+            <div class="navlinks" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="conta.html">Contacts</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="textbox">
+            <h1>
+                DESIGN YOUR <br>WEB PAGE
+            </h1>
+            <p>In today's digital age, a good website is often a fundamental component of any successful personal brand
+                or
+                business.<br> It serves as a gateway to the online world, helping you connect with your target audience
+                and
+                achieve your goals.
+            </p>
+            <a href="conta.html" class="herobtn">Contact Me</a>
+        </div>
+    </section>
+    <!-----Services----->
+    <section class="services">
+        <h2>Services</h2>
+        <p>I Offer the following services to my customers</p>
+        <div class="row">
+            <div class="servicecolumn">
+                <h3>
+                    Website Development
+                </h3>
+                <p>
+                    Custom Website Development: Creating websites from scratch tailored to the client's specific
+                    requirements.
+                </p>
+            </div>
+            <div class="servicecolumn">
+                <h3>
+                    Website Redesign
+                </h3>
+                <p>
+                    Modernizing existing websites to improve their design, functionality, and performance.
+                </p>
+            </div>
+            <div class="servicecolumn">
+                <h3>
+                    Front-end Development
+                </h3>
+                <p>
+                    Responsive Web Design: Ensuring websites are optimized for various screen sizes and devices.
+                    HTML, CSS, JavaScript: Writing and optimizing code for web pages, including interactivity and
+                    animations.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-----About Me---->
+    <section class="About">
+        <h2>About Me</h2>
+        <p>Hello, I'm Boaz Omari, a passionate web developer with a creative mindset and a love for turning
+            ideas into
+            digital experiences.
+            My journey in this dynamic field has taken me through various roles and projects, allowing me to
+            gain
+            expertise in a wide range of technologies and tools. I specialize in front end web development,
+            and I'm always excited to
+            take on new challenges.
+            I'm excited to discuss how I can contribute to your next web project. Let's connect and make the
+            digital
+            world a better place, one line of code at a time.
+            Feel free to Explore my portfolio to learn more about my work and discuss potential
+            collaborations.</p>
+        <a href="conta.html" class="herobtn">Email Me</a>
+    </section>
+    <div class="container">
+        <h1>Contact Me</h1>
+        <p> Web developer open to inquiries, collaboration, and discussions. Whether you have a project, need web
+            development services, or want to talk trends, feel free to reach out using the contact form for prompt
+            and professional responses. Excited about the opportunity to bring your web ideas to life.</p>
+            <div class="contact-box">
+                <div class="contact-left">
+                    <h3>Send your request</h3>
+                    <form>
+                        <div class="input-row">
+                           <div class="input-group">
+                            <label>Name</label>
+                            <input type="text" placeholder="Name">
+                           </div>
+                           <div class="input-group">
+                            <label>Phone</label>
+                            <input type="text" placeholder="0">
+                           </div>
+                        </div>
+                        <div class="input-row">
+                            <div class="input group">
+                             <label>Email</label>
+                             <input type="text" placeholder="Name@gmail.com">
+                            </div>
+                           
+                         </div>
+                         <label>Message</label>
+                            <textarea rows="5" placeholder="Message"></textarea>
+                            <a href="" class="herobtn">Send</a>
+                    </form>
+                </div>
+                <div class="contact-right">
+                    <h3>Reach Us</h3>
+                    <table>
+                        <tr>
+                            <td>Email:</td>
+                            <td>boazomari114</td>
+                        </tr>
+                        <tr>
+                            <td>Phone Number:</td>
+                            <td>+254707741585</td>
+                        </tr>
+                        <tr>
+                            <td>Adress:</td>
+                            <td>Nairobi, Kenya</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+    </div>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-150px";
+        }
+    </script>
+</body>
+
+</html>
